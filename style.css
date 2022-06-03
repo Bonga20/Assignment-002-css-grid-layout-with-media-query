@@ -1,0 +1,38 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.5fr 0.4fr 0.8fr;
+    grid-template-rows: 0.2fr 0.1fr;
+    grid-template-areas:
+    "sidebar1 main sidebar2"
+    "sidebar3 content content" 
+    ;
+}
+#sidebar{
+    grid-area: sidebar1;
+    border: 1.5px solid;
+}
+main{
+    grid-area: main;
+    border: 1.5px solid;
+}
+#sidebar2{
+    grid-area: sidebar2;
+    border: 1.5px solid;
+}
+#sidebar3{
+    grid-area: sidebar3;
+    border: 1.5px solid;
+    height: 10cm;
+}
+#content{
+    grid-area: content;
+}
+#sidebar4{
+    height: 2cm;
+    background-color: rgb(204, 204, 17);
+}
+#sidebar5{
+    height: 2cm;
+    background-color: rgba(0, o, 204 ,0.651);
+}
